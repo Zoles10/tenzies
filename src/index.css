@@ -1,13 +1,101 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+  background-color: #FBF8BE; 
+  font-family: inter;
+  font-size:x-large ;
+  
+}
+.app{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: max-content;
+  min-width: max-content;
+  padding: 60px;
+  background-color:  #234E70;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app--diceArrayAndReset{
+  display: flex;
+}
+
+.app--diceArray{
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 125px 125px 125px 125px 125px;
+  grid-template-rows: 125px 125px;
+}
+
+.app--reset{
+  margin-top: 10px;
+  height: 20%;
+  border-radius: 10px;
+  border: none;
+}
+
+.app--reset2{
+  margin-top: 10px;
+  height: 20%;
+  border-radius: 10px;
+  border: none;
+}
+
+.app--reset--img{
+  height: 20px;
+}
+
+.app--roll{
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  border-radius: 15px;
+  border: none;
+  background-color: rgb(222, 67, 228);
+  color: white;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.app--roll:hover {
+  background-color: rgb(237, 120, 241);
+  box-shadow: -2px -2px 2px rgb(104, 103, 103);
+}
+
+.app--reset{
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: none;
+}
+
+.dice{
+  text-align: center;
+  border-radius: 15px;
+  background-color: white; 
+  box-shadow: 2px 2px 2px rgb(104, 103, 103);
+  margin: 10px;
+}
+
+.dice:hover{
+  background-color: rgb(219, 255, 198); 
+}
+
+.dice--green{
+  border-radius: 15px;
+  background-color: rgb(152, 255, 112); 
+  box-shadow: -2px -2px 2px rgb(104, 103, 103);
+  margin: 10px;
+  text-align: center;
+}
+
+.dice--number{
+  text-align: center;
+}
+
+.app-currentRolls, .app--bestFinish{
+  color: white;
 }
